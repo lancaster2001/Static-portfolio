@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alex Lancaster — Portfolio</title>
+  <meta name="description" content="Portfolio of Alex Lancaster — Software Developer & Technical Consultant">
+  <style>
+    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#0f1720;--card:#0b1220;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071025 0%, #071834 100%);}
+    .container{max-width:980px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7);}
+    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .title{display:flex;gap:18px;align-items:center}
+    h1{font-size:28px;margin:0}
+    .subtitle{color:var(--muted);font-size:14px}
+
+    nav a{color:var(--accent);text-decoration:none;font-weight:600}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:24px}
+    .card{background:var(--card);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+    .section-title{font-size:16px;margin:0 0 10px 0}
+    p{color:#cfe7ff;line-height:1.5}
+    ul{margin:8px 0 0 18px;color:#cfe7ff}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:#d9f0ff}
+    .project{margin-bottom:14px}
+    .meta{color:var(--muted);font-size:13px;margin-top:6px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    a.link{color:#cfe7ff;text-decoration:none}
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .job{padding:10px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02)}
+    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.container{margin:18px;padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <div>
+          <h1>ALEX LANCASTER</h1>
+          <div class="subtitle">Software Developer · Technical Consultant</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2 class="section-title">Personal Statement</h2>
+          <p>I am a motivated Software Developer and Technical Consultant with a strong foundation in software implementation, client engagement, and technical problem-solving. I have hands-on experience in CI/CD pipelines, cloud infrastructure, and data integration projects, coupled with excellent communication and documentation skills.</p>
+          <p>Driven by continuous learning and collaboration, I enjoy bridging the gap between technical teams and clients — ensuring technical solutions align with business goals. My goal is to grow as a Software Developer, leveraging both my technical expertise and my ability to build strong professional relationships.</p>
+        </section>
+
+        <section id="projects" class="card" style="margin-top:18px">
+          <h2 class="section-title">Projects</h2>
+
+          <div class="project">
+            <strong>Home Lab Virtualization & Network Infrastructure</strong>
+            <div class="meta">Self-directed project (Ongoing)</div>
+            <ul>
+              <li>Deployed and maintain Proxmox VE for enterprise-style virtualization.</li>
+              <li>Designed personal networking infrastructure for development and testing.</li>
+              <li>Hands-on Linux administration, scripting, SSH key management, and VPN configuration.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <strong>Personal Portfolio Website</strong>
+            <div class="meta">Self-directed (Ongoing) — <a class="link" href="https://portfolio.silentscopz1.top" target="_blank" rel="noopener">portfolio.silentscopz1.top</a></div>
+            <ul>
+              <li>Designed and deployed a multi-node server cluster to ensure continuous uptime and automatic failover between machines.</li>
+              <li>Configured a redundant fallback site and automated monitoring for rapid recovery and reduced downtime.</li>
+              <li>Maintain separate development, staging, and production environments so changes can be worked on safely without impacting live users.</li>
+              <li>Manage full-stack hosting responsibilities: networking, security hardening, backups, and performance tuning.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <strong>Property Management Database</strong>
+            <div class="meta">VLDB Project (Complete)</div>
+            <ul>
+              <li>Ingested multiple data sources to create a unified, consumable property data stream.</li>
+              <li>Built APIs for downstream teams and documented data contracts for knowledge transfer.</li>
+              <li>Coordinated with upstream teams and produced training materials for stakeholders.</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2 class="section-title">Education</h2>
+          <div style="margin-bottom:10px">
+            <strong>The University of Liverpool</strong><br>
+            Computer Science with Software Development — <em>2:1</em><br>
+            September 2020 – August 2024
+          </div>
+          <div>
+            <strong>Birkenhead Sixth Form College</strong><br>
+            Computer Science, Physics, Mathematics — <em>A, B, B</em><br>
+            September 2018 – June 2020
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2 class="section-title">Work History</h2>
+          <div class="timeline">
+            <div class="job">
+              <strong>VLDB Solutions</strong> — Technical Consultant<br>
+              <div class="meta">Aug 2024 – Aug 2025</div>
+              <ul>
+                <li>Developed and maintained CI/CD pipelines for reliable, scalable deployments.</li>
+                <li>Worked with development and data teams to deliver repeatable environments and hybrid cloud designs.</li>
+                <li>Facilitated communication between clients and technical teams, and supported junior colleagues.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <strong>McDonald's</strong> — Crew Member<br>
+              <div class="meta">Jul 2022 – Aug 2024</div>
+              <ul>
+                <li>Delivered great customer service in a fast-paced environment and developed teamwork and multitasking skills.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <strong>Slater & Gordon</strong> — Customer Service Advisor<br>
+              <div class="meta">Oct 2020 – Nov 2021</div>
+              <ul>
+                <li>Guided customers through processes and delivered clear, empathic communication.</li>
+              </ul>
+            </div>
+
+            <div class="job">
+              <strong>Primark</strong> — Customer Assistant<br>
+              <div class="meta">Aug 2019 – Jan 2020</div>
+            </div>
+
+            <div class="job">
+              <strong>Home Bargains</strong> — Customer Assistant<br>
+              <div class="meta">Oct 2018 – Feb 2019</div>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3 class="section-title">Contact Info</h3>
+          <div class="contact-list">
+            <div><strong>Phone:</strong> <a class="link" href="tel:07985588458">07985 588458</a></div>
+            <div><strong>Email:</strong> <a class="link" href="mailto:alextwickenham2001@hotmail.com">alextwickenham2001@hotmail.com</a></div>
+            <div><strong>GitHub:</strong> <a class="link" href="https://github.com/Lancaster2001" target="_blank">Lancaster2001</a></div>
+            <div><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/alex-lancaster-7437671b4/" target="_blank">Alex Lancaster</a></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 class="section-title">Skills</h3>
+          <div class="skills">
+            <span class="pill">Java</span>
+            <span class="pill">Python</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">C#</span>
+            <span class="pill">Swift</span>
+            <span class="pill">Bash</span>
+            <span class="pill">SQL</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">MongoDB</span>
+            <span class="pill">MySQL</span>
+            <span class="pill">Docker</span>
+            <span class="pill">Kubernetes</span>
+            <span class="pill">AWS</span>
+            <span class="pill">Proxmox VE</span>
+            <span class="pill">Azure</span>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h3 class="section-title">Quick Links</h3>
+          <ul>
+            <li><a class="link" href="/resume.pdf" target="_blank">Download CV (PDF)</a></li>
+          </ul>
+        </div>
+
+      </aside>
+    </div>
+
+    <footer>
+      Built and maintained by Alex Lancaster — © <span id="year"></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
