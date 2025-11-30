@@ -1,55 +1,43 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alex Lancaster — Portfolio</title>
   <meta name="description" content="CV of Alex Lancaster — Junior Software Developer">
-  <style>
-    :root{--accent:#0b76ef;--muted:#6b7280;--bg:#0f1720;--card:#0b1220;--glass:rgba(255,255,255,0.03)}
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#071025 0%, #071834 100%);}
-    .container{max-width:980px;margin:40px auto;padding:28px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.7);}
-    header{display:flex;align-items:center;justify-content:space-between;gap:20px}
-    .title{display:flex;gap:18px;align-items:center}
-    h1{font-size:28px;margin:0}
-    .subtitle{color:var(--muted);font-size:14px}
-    nav a{color:var(--accent);text-decoration:none;font-weight:600}
-    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:24px}
-    .card{background:var(--card);padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
-    .section-title{font-size:16px;margin:0 0 10px 0}
-    p{color:#cfe7ff;line-height:1.5}
-    ul{margin:8px 0 0 18px;color:#cfe7ff}
-    .skills{display:flex;flex-wrap:wrap;gap:8px}
-    .pill{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:#d9f0ff}
-    .project{margin-bottom:14px}
-    .meta{color:var(--muted);font-size:13px;margin-top:6px}
-    .contact-list{display:flex;flex-direction:column;gap:8px}
-    a.link{color:#cfe7ff;text-decoration:none}
-    .timeline{display:flex;flex-direction:column;gap:12px}
-    .job{padding:10px;border-radius:8px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));border:1px solid rgba(255,255,255,0.02)}
-    footer{margin-top:26px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:880px){.grid{grid-template-columns:1fr;}.container{margin:18px;padding:16px}}
-  </style>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-  <div class="container">
-    <header>
-      <div class="title">
-        <div>
-          <h1>ALEX LANCASTER</h1>
-          <div class="subtitle">Junior Software Developer</div>
-        </div>
-      </div>
-    </header>
 
+<body>
+
+  <header>
+    <div class="title">
+      <div>
+        <h1>ALEX LANCASTER</h1>
+        <div class="subtitle">Junior Software Developer</div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Pages/under_construction.html">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
     <div class="grid">
       <main>
 
         <section class="card">
           <h2 class="section-title">Personal Statement</h2>
-          <p>Junior Software Developer with hands-on experience in CI/CD pipelines, cloud infrastructure, Linux administration, and building full-stack solutions. Skilled in delivering reliable deployments and secure environments.</p>
-          <p>Enthusiastic about joining engineering teams where I can contribute to modern DevOps workflows and scalable applications while continuously developing technical expertise.</p>
+          <p>Junior Software Developer with hands-on experience in CI/CD pipelines, cloud infrastructure, Linux
+            administration, and building full-stack solutions. Skilled in delivering reliable deployments and secure
+            environments.</p>
+          <p>Enthusiastic about joining engineering teams where I can contribute to modern DevOps workflows and scalable
+            applications while continuously developing technical expertise.</p>
         </section>
 
         <section class="card" style="margin-top:18px">
@@ -67,7 +55,7 @@
 
           <div class="project">
             <strong>Personal Portfolio Website</strong>
-            <div class="meta">Ongoing — <a class="link" href="https://portfolio.silentscopz1.top" target="_blank">portfolio.silentscopz1.top</a></div>
+            <div class="meta">Self-directed project (Ongoing)</div>
             <ul>
               <li>Built a highly available multi-node clustered environment with automatic failover.</li>
               <li>Implemented isolated dev/staging/prod environments enabling zero-downtime updates.</li>
@@ -91,12 +79,12 @@
         <section class="card" style="margin-top:18px">
           <h2 class="section-title">Education</h2>
           <p><strong>The University of Liverpool</strong><br>
-          Computer Science with Software Development — <em>2:1</em><br>
-          Sep 2020 – Aug 2024</p>
+            Computer Science with Software Development — <em>2:1</em><br>
+            Sep 2020 – Aug 2024</p>
 
           <p><strong>Birkenhead Sixth Form College</strong><br>
-          Computer Science, Physics, Mathematics — <em>A, B, B</em><br>
-          Sep 2018 – Jun 2020</p>
+            Computer Science, Physics, Mathematics — <em>A, B, B</em><br>
+            Sep 2018 – Jun 2020</p>
         </section>
 
         <section class="card" style="margin-top:18px">
@@ -121,62 +109,47 @@
                 <li>Built strong teamwork, multitasking, and communication skills.</li>
               </ul>
             </div>
-
-            <div class="job">
-              <strong>Slater & Gordon</strong> — Customer Service Advisor<br>
-              <div class="meta">Oct 2020 – Nov 2021</div>
-              <ul>
-                <li>Guided customers through claims processes with clear, efficient communication.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <strong>Primark</strong> — Customer Assistant<br>
-              <div class="meta">Aug 2019 – Jan 2020</div>
-              <ul>
-                <li>Maintained stock areas, assisted customers, and ensured store presentation.</li>
-              </ul>
-            </div>
-
-            <div class="job">
-              <strong>Home Bargains</strong> — Customer Assistant<br>
-              <div class="meta">Oct 2018 – Feb 2019</div>
-              <ul>
-                <li>Restocked inventory and provided customer support.</li>
-              </ul>
-            </div>
-
           </div>
         </section>
       </main>
 
       <aside>
 
-        <div class="card">
+        <div class="card" id="contact">
           <h3 class="section-title">Contact Info</h3>
           <div class="contact-list">
             <div><strong>Phone:</strong> <a class="link" href="tel:07985588458">07985 588458</a></div>
-            <div><strong>Email:</strong> <a class="link" href="mailto:alextwickenham2001@hotmail.com">alextwickenham2001@hotmail.com</a></div>
-            <div><strong>GitHub:</strong> <a class="link" href="https://github.com/Lancaster2001" target="_blank">Lancaster2001</a></div>
-            <div><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/alex-lancaster-7437671b4/" target="_blank">Alex Lancaster</a></div>
+            <div><strong>Email:</strong> <a class="link"
+                href="mailto:alextwickenham2001@hotmail.com">alextwickenham2001@hotmail.com</a></div>
+            <div><strong>GitHub:</strong> <a class="link" href="https://github.com/Lancaster2001"
+                target="_blank">Lancaster2001</a></div>
+            <div><strong>LinkedIn:</strong> <a class="link" href="https://www.linkedin.com/in/alex-lancaster-7437671b4/"
+                target="_blank">Alex
+                Lancaster</a></div>
           </div>
         </div>
-
+        
         <div id="linkedin-badge-container" style="margin-top:10px;">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="alex-lancaster-7437671b4" data-version="v1">
-              <a class="badge-base__link LI-simple-link" href="https://uk.linkedin.com/in/alex-lancaster-7437671b4?trk=profile-badge"></a>
-            </div>
-
-            <!-- Fallback shown when LinkedIn embedding is blocked by CSP/adblockers -->
-            <div id="linkedin-fallback" style="margin-top:10px;">
-              <a class="link" href="https://www.linkedin.com/in/alex-lancaster-7437671b4/" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-                  <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.9h5V24H0V8.9zM8.5 8.9h4.8v2.1h.1c.7-1.3 2.4-2.7 5-2.7 5.3 0 6.3 3.5 6.3 8V24h-5V17.3c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.8-2.7 3.6V24h-5V8.9z"/>
-                </svg>
-                <span>View LinkedIn profile</span>
-              </a>
-            </div>
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark"
+            data-type="VERTICAL" data-vanity="alex-lancaster-7437671b4" data-version="v1">
+            <a class="badge-base__link LI-simple-link"
+              href="https://uk.linkedin.com/in/alex-lancaster-7437671b4?trk=profile-badge"></a>
           </div>
+
+          <!-- Fallback shown when LinkedIn embedding is blocked by CSP/adblockers -->
+          <div id="linkedin-fallback" style="margin-top:10px;">
+            <a class="link" href="https://www.linkedin.com/in/alex-lancaster-7437671b4/" target="_blank"
+              rel="noopener noreferrer"
+              style="display:inline-flex;align-items:center;gap:8px;color:inherit;text-decoration:none">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#0A66C2" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true" focusable="false">
+                <path
+                  d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 8.9h5V24H0V8.9zM8.5 8.9h4.8v2.1h.1c.7-1.3 2.4-2.7 5-2.7 5.3 0 6.3 3.5 6.3 8V24h-5V17.3c0-1.6 0-3.7-2.3-3.7-2.3 0-2.7 1.8-2.7 3.6V24h-5V8.9z" />
+              </svg>
+              <span>View LinkedIn profile</span>
+            </a>
+          </div>
+        </div>
 
         <div class="card" style="margin-top:14px">
           <h3 class="section-title">Skills</h3>
@@ -206,33 +179,33 @@
         <div class="card" style="margin-top:14px">
           <h3 class="section-title">Quick Links</h3>
           <ul>
-            <li><a class="link" href="/AlexLancaster_CV.pdf" target="_blank">Download CV (PDF)</a></li>
+            <li><a class="link" href="Assets/AlexLancaster_CV.pdf" target="_blank">Download CV (PDF)</a></li>
           </ul>
         </div>
 
-          <script src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript"></script>
-          <script>
-            // If the LinkedIn badge successfully renders, hide the fallback link.
-            (function(){
-              function hideFallbackIfBadge() {
-                var badge = document.querySelector('.LI-profile-badge');
-                var fallback = document.getElementById('linkedin-fallback');
-                if(!fallback) return;
-                // LinkedIn script typically injects children; check for that or link element
-                if (badge && (badge.querySelector('.badge-base__link') || badge.children.length > 0)) {
-                  fallback.style.display = 'none';
-                }
+        <script src="https://platform.linkedin.com/badges/js/profile.js" type="text/javascript"></script>
+        <script>
+          // If the LinkedIn badge successfully renders, hide the fallback link.
+          (function () {
+            function hideFallbackIfBadge() {
+              var badge = document.querySelector('.LI-profile-badge');
+              var fallback = document.getElementById('linkedin-fallback');
+              if (!fallback) return;
+              // LinkedIn script typically injects children; check for that or link element
+              if (badge && (badge.querySelector('.badge-base__link') || badge.children.length > 0)) {
+                fallback.style.display = 'none';
               }
-              window.addEventListener('load', function(){
+            }
+            window.addEventListener('load', function () {
+              hideFallbackIfBadge();
+              var tries = 0, iv = setInterval(function () {
                 hideFallbackIfBadge();
-                var tries = 0, iv = setInterval(function(){
-                  hideFallbackIfBadge();
-                  tries++;
-                  if(tries>10) clearInterval(iv);
-                }, 300);
-              });
-            })();
-          </script>
+                tries++;
+                if (tries > 10) clearInterval(iv);
+              }, 300);
+            });
+          })();
+        </script>
 
       </aside>
     </div>
@@ -246,4 +219,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
 </html>
