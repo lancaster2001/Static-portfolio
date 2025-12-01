@@ -1,10 +1,13 @@
 # Static-portfolio
 This is a basic portfolio site for my cv and linkedin
 
-Know bugs:
+## Templates:
+- CV page
+- Project page
+
+## Know bugs:
 - linkedin badge won't display if third party cookies are disabled
 
-Credits:
-
+## Credits:
 To: https://github.com/tmKamal/under-construction-template<br>
 For: the under construction place holder page.
