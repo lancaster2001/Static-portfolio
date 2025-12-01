@@ -108,13 +108,6 @@ h1 {
     font-size: 14px
 }
 
-/* This rule is now redundant as .main-nav a is more specific, but keep for other navs */
-nav a {
-    color: var(--accent);
-    text-decoration: none;
-    font-weight: 600
-}
-
 .grid {
     display: grid;
     grid-template-columns: 1fr 320px;
