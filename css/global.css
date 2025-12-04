@@ -120,6 +120,14 @@ h1 {
     border: 1px solid rgba(255, 255, 255, 0.03)
 }
 
+.card img {/*Ensures images fit in cards*/
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    margin-bottom: 12px; 
+}
+
 .section-title {
     font-size: 16px;
     margin: 0 0 10px 0
